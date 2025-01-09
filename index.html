@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exalgo Tech Applications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .category {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .category h2 {
+            margin-bottom: 10px;
+        }
+
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .wallpapers img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 10px;
+            /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Semi-transparent background */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            visibility: hidden;
+            /* Hide by default */
+        }
+
+        .image-container:hover .overlay {
+            visibility: visible;
+            /* Show on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Exalgo Tech Apps</h1>
+    </header>
+
+    <!-- <nav>
+        <a href="#welcome">Welcome</a>
+        <a href="#categories">Categories</a>
+    </nav> -->
+
+    <section id="welcome" class="welcome">
+        <!-- <h2>Welcome to the World of Beautiful Nature Wallpapers</h2>
+        <h4>Explore 10 Amazing Categories of Nature Wallpapers</h4> -->
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="category">
+            <h2>OUR APPLICATIONS</h2>
+            <div class="wallpapers">
+                <div class="image-container">
+                    <a href="img/QuickGST-Calculator.png" target="_blank">
+                        <img src="img/QuickGST-Calculator.png" alt="QuickGST-Calculator">
+                    </a>
+                    <div class="overlay">QuickGST-Calculator</div>
+                </div>
+                <div class="image-container">
+                    <a href="img/Translate-All-Languages.png" target="_blank">
+                        <img src="img/Translate-All-Languages.png" alt="Translate-All-Languages">
+                    </a>
+                    <div class="overlay">Translate-All-Languages</div>
+                </div>
+                <div class="image-container">
+                    <a href="img/Word-Search-Puzzle-Games.png" target="_blank">
+                        <img src="img/Word-Search-Puzzle-Games.png" alt="Word-Search-Puzzle-Game">
+                    </a>
+                    <div class="overlay">Word-Search-Puzzle-Game</div>
+                </div>
+                <div class="image-container">
+                    <a href="img/Healthy-Recipes-Offline.png" target="_blank">
+                        <img src="img/Healthy-Recipes-Offline.png" alt="Healthy-Recipes-Offline">
+                    </a>
+                    <div class="overlay">Healthy-Recipes-Offline</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Exalgo Apps Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
